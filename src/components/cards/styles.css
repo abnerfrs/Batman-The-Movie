@@ -1,0 +1,59 @@
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #0d0d0d;
+}
+
+.cards-content{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro';  
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner1{
+    background-image: url(../../assets/robert-pattison.webp);  
+}
+
+.banner2{
+    background-image: url(../../assets/zoe-kravitz.jpeg);
+}
+
+.banner3{
+    background-image: url(../../assets/jeffrey-wright.png);
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .cards-content {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 60px;
+    }
+}

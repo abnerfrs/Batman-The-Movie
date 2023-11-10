@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+#banner {
+  background-image: url(../../assets/batbanner.webp);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 80px;
+  font-family: "Kdam Thmor Pro";
+  color: #fff;
+}
+
+#trailer-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #0d0d0d;
+}
+
+.content {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trailer {
+  width: 50%;
+}
+
+#sinopse {
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.description {
+  color: #fff;
+  font-size: 19px;
+  font-family: "Kdam Thmor Pro";
+  width: 70%;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  background-color: #d21617;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  border: none;
+  align-items: center;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(161, 3, 3);
+  color: #000;
+}
+
+/* Media Queries*/
+
+@media (max-width: 800px) {
+  header {
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #logo {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  * {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .description {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .trailer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  #sinopse {
+    display: none;
+  }
+}
